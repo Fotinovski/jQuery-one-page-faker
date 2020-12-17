@@ -1,3 +1,2 @@
-# Firebase Contact Form
+# Jquery one page faker and Firebase Contact Form 
 
-Mobile first, responsive contact from that sends data to a firebase database
