@@ -1,0 +1,26 @@
+{
+  "name": "plutos-project",
+  "version": "1.0.0",
+  "description": "Website for Pluto's Doubts",
+  "main": "./javascript/main.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass scss/main.scss css/style.comp.css",
+    "compress:css": "node-sass css/style.comp.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "author": "Darko Fotinovski",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

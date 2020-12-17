@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  // overflow: hidden;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
+//utility
+
+//var
+
+$pd:6rem;
+
+//NAVIGATION
+
+.header {
+  background-color: transparent;
+  padding: 0 5rem;
+  width: 100vw;
+  margin: 0 auto;
+  height: 5rem;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  .nav {
+    &__link {
+      text-decoration: none;
+      color: lightgrey;
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//HOMEPAGE
+
+.home-page {
+  overflow: hidden;
+  background: url("../images/home-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: $pd;
+}
+
+.about-page{
+  background-color: azure;
+  width: 100vw;
+  height: 100vh;
+  padding-top: $pd;
+}
+
+.shop-page{
+background-color: beige;
+width: 100vw;
+  height: 100vh;
+  padding-top: $pd;
+}
+.contact-page{
+background-color: blanchedalmond;
+width: 100vw;
+  height: 100vh;
+  padding-top: $pd;
+  label{
+    font-size: 1rem;
+  }
+}
