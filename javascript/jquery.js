@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
     $(".nav__link").click(function () {
-        $(".webpage").fadeOut('fast');
+        $(".webpage").hide();
         var target_page = $(this).data("webpage");
-        $("#" + target_page).fadeIn('fast');
+        $("#" + target_page).show();
     })
   
     $('.nav a').click(function () {
@@ -13,7 +13,7 @@ $(document).ready(function () {
   
     var target = window.location.hash;
   
-    if (target == "#") {
+    if (target == "#" || "/#") {
         $("#pageOne").trigger("click");
     }
     if (target == "#about") {
