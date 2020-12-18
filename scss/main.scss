@@ -24,32 +24,58 @@ body {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 //var
 
-$pd:6rem;
+$pd: 6rem;
 
 //NAVIGATION
 
 .header {
   background-color: transparent;
-  padding: 0 5rem;
-  width: 100vw;
-  margin: 0 auto;
-  height: 5rem;
+  transition: all 0.3s ease-in;
+  height: 4rem;
+  padding: .5rem 0;
+  width: 100%;
+  position: fixed;
+  align-items: center;
   display: flex;
     justify-content: space-between;
+  div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: fixed;
-  .nav {
-    &__link {
-      text-decoration: none;
-      color: lightgrey;
-      padding: 1rem;
-      font-weight: 600;
-      font-size: 1.2rem;
+    .nav {
+      &__link {
+        text-decoration: none;
+        color:black;
+        padding: 1rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+        &--active{
+          color: yellowgreen;
+        }
+      }
+    }
+  }
+}
+.active-nav {
+  transition: all 0.3s ease-in;
+  height: 3.5rem;
+  padding: .5rem 0;
+  background-color: black;
+  div {
+    .nav__link {
+      color: white;
+      &--active {
+        color: darken(yellow, 10%);
+      }
+    }
+    h1 {
+      color: white;
+      font-weight: bold;
     }
   }
 }
@@ -58,34 +84,27 @@ $pd:6rem;
 
 .home-page {
   overflow: hidden;
-  background: url("../images/home-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  
+  height: 200vh;
   padding-top: $pd;
 }
 
-.about-page{
+.about-page {
   background-color: azure;
-  width: 100vw;
-  height: 100vh;
+  height: 200vh;
   padding-top: $pd;
 }
 
-.shop-page{
-background-color: beige;
-width: 100vw;
-  height: 100vh;
+.shop-page {
+  background-color: beige;
+  height: 110vh;
   padding-top: $pd;
 }
-.contact-page{
-background-color: blanchedalmond;
-width: 100vw;
-  height: 100vh;
+.contact-page {
+  background-color: blanchedalmond;
+  height: 110vh;
   padding-top: $pd;
-  label{
+  label {
     font-size: 1rem;
   }
 }

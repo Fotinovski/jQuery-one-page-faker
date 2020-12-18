@@ -7,8 +7,8 @@ $(document).ready(function () {
     })
   
     $('.nav a').click(function () {
-        $('a').removeClass("active");
-        $(this).addClass("active");
+        $('a').removeClass("nav__link--active");
+        $(this).addClass("nav__link--active");
     });
   
     var target = window.location.hash;
@@ -29,3 +29,14 @@ $(document).ready(function () {
   
   });
   
+  //***********************
+  
+  $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 10) {
+            $(".header").addClass("active-nav");
+        } else {
+           $(".header").removeClass("active-nav");
+        }
+    });
+});

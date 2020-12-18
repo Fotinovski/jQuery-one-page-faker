@@ -29,48 +29,55 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="header ">
-      <div>
-        <h1>LOGO</h1>
+    <section class="header">
+      <div class="container mx-auto">
+        <div>
+          <h1>LOGO</h1>
+        </div>
+        <nav class="nav">
+          <a href="#" id="pageOne" class="nav__link" data-webpage="page1">
+            <span class="nav__text">Home</span>
+          </a>
+          <a
+            href="#about"
+            id="pageTwo"
+            class="nav__link nav__link--active"
+            data-webpage="page2"
+          >
+            <span class="nav__text">About</span>
+          </a>
+          <a href="#shop" id="pageThree" class="nav__link" data-webpage="page3">
+            <span class="nav__text">Shop</span>
+          </a>
+          <a
+            href="#contact"
+            id="pageFour"
+            class="nav__link"
+            data-webpage="page4"
+          >
+            <span class="nav__text">Contact</span>
+          </a>
+        </nav>
       </div>
-      <nav class="nav">
-        <a href="#" id="pageOne" class="nav__link" data-webpage="page1">
-          <span class="nav__text">Home</span>
-        </a>
-        <a
-          href="#about"
-          id="pageTwo"
-          class="nav__link nav__link--active"
-          data-webpage="page2"
-        >
-          <span class="nav__text">About</span>
-        </a>
-        <a href="#shop" id="pageThree" class="nav__link" data-webpage="page3">
-          <span class="nav__text">Shop</span>
-        </a>
-        <a href="#contact" id="pageFour" class="nav__link" data-webpage="page4">
-          <span class="nav__text">Contact</span>
-        </a>
-      </nav>
     </section>
 
     <section #home-page class="webpage home-page" id="page1">
-      <div class="container ">
+      <div class="container">
         <h1>This is homepage</h1>
       </div>
     </section>
     <section #about-page class="webpage about-page" id="page2">
-      <div class="container ">
+      <div class="container">
         <h1>This is about</h1>
       </div>
     </section>
     <section #shop-page class="webpage shop-page" id="page3">
-      <div class="container ">
+      <div class="container">
         <h1>This is shop</h1>
       </div>
     </section>
     <section #contact-page class="webpage contact-page" id="page4">
-      <div class="container ">
+      <div class="container">
         <form
           class="col-md-6 mx-auto pt-5"
           id="contactForm"
