@@ -51,9 +51,12 @@ $pd: 6rem;
       &__link {
         text-decoration: none;
         color:black;
-        padding: 1rem;
+        padding: 1rem 0;
         font-weight: 600;
         font-size: 1.2rem;
+        &:not(:last-child){
+          margin-right: 2rem;
+        }
         &--active{
           color: yellowgreen;
         }

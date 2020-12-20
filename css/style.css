@@ -41,9 +41,11 @@ body {
     .header div .nav__link {
       text-decoration: none;
       color: black;
-      padding: 1rem;
+      padding: 1rem 0;
       font-weight: 600;
       font-size: 1.2rem; }
+      .header div .nav__link:not(:last-child) {
+        margin-right: 2rem; }
       .header div .nav__link--active {
         color: yellowgreen; }
 
